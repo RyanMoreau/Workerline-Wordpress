@@ -1,0 +1,342 @@
+/* 
+    1. Home 
+    2. Privacy
+    3. Form Styling
+    4. Advocates
+    5. Single
+    6. Rewards
+    7. Members
+    8. MQ
+*/
+
+/* 
+    * 1. Home 
+*/
+.intro-banner .row .column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body.home footer.site-footer {
+    margin-top: 0;
+}
+
+
+.intro-image {
+/*     background-image:url(/wp-content/uploads/2020/07/dashboard.png); */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.why-workerline {
+    margin-top: 10vh;
+}
+
+.future-logo-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.future-logo-slider div img {
+    width:80%;
+}
+
+.demo-form {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+body:not(.home) main h1 {
+    margin-top: 0;
+    margin-bottom: 6rem;
+}
+
+body.home form input:not([type="submit"]) {
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+h3.aoda-link a {
+    color: inherit;
+    opacity:1;
+    transition:0.3s ease;
+}
+
+h3.aoda-link a:hover {
+    opacity:0.6;
+}
+
+h3.aoda-link a span.purple {
+    color:var(--purple);
+}
+
+@media (max-width:992px) {
+    .intro-banner {
+        padding-top: 0 !important;
+    }
+    footer .form-wrapper {
+        max-width:90%;
+        margin:5rem auto;
+    }
+    footer .form-wrapper,
+    .why-workerline {
+        margin: 5rem auto 0;
+    }
+    .footer-top,
+    .demo-intro {
+        text-align: center;
+    }    
+    .demo-form,
+    .width-75,
+    .width-50 {
+        width: 100%;
+    }
+    .grey-div .row {
+        flex-direction: column-reverse;
+    }
+    #demo .row {
+        flex-direction: column;
+    }    
+}
+
+/* 
+    * 2. Privacy 
+*/
+.privacy-policy main ul li::before {
+    content: '- ';
+    display: block;
+    width: 0px;
+    position:absolute;
+    left: 0px;    
+}
+
+/* 
+    * 3. Form Styling 
+*/
+body:not(.home) label {
+    text-transform: uppercase;
+    font-family: var(--subheader);
+    font-weight:lighter;
+    width: 100%;
+}
+
+form input:not([type="submit"]),
+form textarea {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    -webkit-appearance: none;
+    padding: 1rem;
+    width: 100%;
+    margin: 0;
+}
+
+.arvo p {
+    font-family: Arvo, sans-serif;
+}
+
+.arvo,
+.arvo > div {
+    width: 100%;
+}
+
+.post-sidebar {
+    position:relative;
+}
+
+.post-sidebar ul {
+    position: sticky;
+    top: 10vh;
+}
+
+/* 
+    * 4. Advocates 
+*/
+/* Advocates */
+.page-template-pod_advocates .post-content > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-template-pod_advocates .advoctate-left {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 250px;
+    width: 100%;
+    padding: 20%;
+    margin-bottom: 3rem;
+}
+
+.page-template-pod_advocates .advoctate-right {
+}
+
+.page-template-pod_advocates .post-content > div h5 {
+    color:#000;
+    margin:0;
+}
+
+.page-template-pod_advocates .post-content > div p.subheader {
+    margin: 0;
+    font-size: initial;
+}
+
+/* 
+    * 5. Single 
+*/
+.single p.subheader {
+    margin: 0 0 3rem;
+    font-size: initial;
+}
+
+.single a.featured-image-post {
+    background-position: left;
+}
+
+.nav-links,
+.single nav.navigation.post-navigation {
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.single nav.navigation.post-navigation h2 {
+    display:none;
+}
+
+.textwidget .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width:500px;
+    margin: 5rem auto 0;
+}
+
+.textwidget .email {
+    width: calc(100% - 200px);
+}
+
+.textwidget .form-wrapper .btn {
+    margin:0;
+}
+
+@media (max-width:992px) {
+    .textwidget .email {
+        width: 80%;
+        margin-bottom:2rem;
+    }
+    .textwidget .form-wrapper {
+        justify-content: center;
+    }    
+}
+
+.demo-form div {
+    margin-bottom: 1rem;
+}
+
+/* 
+    * 7. Members 
+*/
+.icon-textarea .textwidget {
+    position:relative;
+    padding-left:50px;
+}
+
+.icon-textarea .textwidget::before {
+    content: '';
+    height:30px;
+    width:30px;
+    display: block;
+    background-size:contain;
+    background-repeat:no-repeat;
+    position:absolute;
+    left:0;
+}
+
+.panel-layout li {
+    list-style:none;
+}
+
+.members-area .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/shield.png);    
+}
+
+.free-website .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/computer.png);    
+}
+
+.online-voting .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/voting.png);    
+}
+
+.analytics .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/analytics.png);    
+}
+
+.emailing .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/envelope.png);    
+}
+
+.rewards .textwidget::before {
+    background-image: url(/wp-content/uploads/2020/07/shield.png);    
+}
+
+@media (max-width:992px) {
+    body {
+        overflow-x:hidden;
+    }
+    main.home .why-workerline {
+        text-align: center;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    main.home img {
+        margin-top: 3rem;
+    }
+    main.home .orange-arrow li::before,
+    main.home .why-workerline ul li::before,
+    main.home .features-text li::before {
+        display:none;
+    }
+
+    main.home .orange-arrow li,
+    main.home .why-workerline ul li,
+    main.home .features-text li {
+        padding:0;
+    }
+
+    main.home .features-bg {
+        text-align: center;
+    }
+
+    main.home .features-text,
+    main.home .showcase-text {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    main.home .future-logo-slider {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    main.home .future-logo-slider img {
+        margin-bottom:3rem;
+    }
+    .home-demo {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:992px) {
+    .row {
+        max-width:95%;
+        margin:0 auto;
+    }    
+}
